@@ -7,7 +7,35 @@ img {
     size-adjust: 1px;
 }
 
-
-#add-city {
+#card {
     background: turquoise;
+}
+
+#card1 {
+    background: turquoise;
+}
+
+#card2 {
+    background: turquoise;
+}
+
+#card3 {
+    background: turquoise;
+}
+
+#card4 {
+    background: turquoise;
+}
+
+#card5 {
+    background: turquoise;
+}
+
+
+#parent {
+    white-space: nowrap;
+}
+
+.child {
+    display: inline-block;
 }
