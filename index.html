@@ -23,15 +23,18 @@
         <h2 id="form-heading" class="mt-1 h3 form-label">
           Search for a City:
         </h2>
-       <div id="cities-view"></div>
+        <div id="cities-view"></div>
         <form id="search-form" class="form">
           <div class="form-inline form-group">
             <div class="input-group">
               <input class="form-input weather-search" type="text" id="city-input" placeholder="London"
                 aria-labelledby="form-heading" aria-controls="today forecast" />
               <div class="input-group-append">
-                <button type="submit" class="btn btn-primary" id="add-city" aria-label="submit-search">
+                <button type="submit" class="btn btn-default search" id="add-city" aria-label="submit-search">
                   Search
+                </button>
+                <button type="submit" class="btn btn-default clear" id="clear-city" aria-label="clear-search">
+                  Clear results
                 </button>
                 <hr class="hr weather-hr" />
               </div>
