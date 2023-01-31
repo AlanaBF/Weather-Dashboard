@@ -9,6 +9,8 @@ Use the [5 Day Weather Forecast](https://openweathermap.org/forecast5) to retrie
 
 You will use `localStorage` to store any persistent data. 
 
+https://alanabf.github.io/Weather-Dashboard/
+
 ## User Story
 
 ```text
@@ -17,7 +19,7 @@ I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
 
-## Usage
+## Functionality
 
 * A weather dashboard with form inputs.
   * When a user searches for a city they are presented with current and future conditions for that city and that city is added to the search history
@@ -34,3 +36,34 @@ SO THAT I can plan a trip accordingly
     * The temperature
     * The humidity
   * When a user clicks on a city in the search history they are again presented with current and future conditions for that city
+
+## Installation
+
+This application runs in the browser.
+Once loaded, click a city in the search box and click search.
+This will append the search as a button below. Click on this and the weather will show for that city.
+You can add as many cities as you like and then click on the one you want the weather for.
+
+## Usage
+
+![alt text](./assets/images/Screenshot-weather-dashboard.png)
+
+## Technology Used
+
+* JavaScript
+* jQuery
+* Bootstrap
+* openweather API
+* Moment.js
+* The DOM
+* CSS and html files.
+
+## Credits
+
+N/A
+
+## License
+
+MIT
+
+---
