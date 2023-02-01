@@ -3,12 +3,6 @@ $(document).ready(function () {
     // empty array for the cities to go in
     cities = [];
 
-    // clear button added to clear page and start again
-    $(".clear").click(function () {
-        $("#city-input").val("");
-        $("#buttons-view").empty();
-    });
-
     // function to render search buttons to page
     function renderButtons() {
         $("#buttons-view").empty();
@@ -58,7 +52,7 @@ $(document).ready(function () {
             var iconURL = "http://openweathermap.org/img/w/" + iconcode + ".png";
             $(".weather-icon").attr("src", iconURL);
             // adds todays date which updates on refresh
-            var dateToday = moment().format("(dddd, MMMM Do YYYY)");
+            var dateToday = moment().format("(DD/MM/YYYY)");
             $("#date-today").text(dateToday);
             //retrieving the temp, wind and humidity data from the api
             var tempC = Math.floor(response.list[0].main.temp - 273.15);

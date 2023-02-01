@@ -31,11 +31,8 @@
               <input class="form-input weather-search" type="text" id="city-input" placeholder="London"
                 aria-labelledby="form-heading" aria-controls="today forecast" />
               <div class="input-group-append">
-                <button type="submit" class="btn btn-default search" id="add-city" aria-label="submit-search">
+                <button type="submit" class="btn btn-primary" id="add-city" aria-label="submit-search">
                   Search
-                </button>
-                <button type="submit" class="btn btn-default clear" id="clear-city" aria-label="clear-search">
-                  Clear results
                 </button>
                 <hr class="hr weather-hr" />
               </div>
@@ -46,7 +43,7 @@
         <div id="buttons-view"></div>
       </aside>
       <!-- Todays Weather-->
-      <main class="col-lg-9 pb-3">
+      <main class="col-lg-9 pb-3 card border-dark mb-3">
         <section id="today" class="mt-3" role="region" aria-live="polite"></section>
         <section id="forecast" class="row mt-3" role="region" aria-live="polite"></section>
         <div id="card" class="card-body">
@@ -65,17 +62,17 @@
       <!-- 5 Day Forecast-->
       <h1>5 Day Forecast:</h1>
       <div class="card-group">
-        <div class="card" id="card1" style="width: 18rem;">
-          <div class="card-header" id="day1"></div>
+        <div class="card bg-secondary mb-3" id="card1" style="width: 18rem;">
+          <div class="card-header text-white" id="day1"></div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><img id="wicon1" class="weather1" alt="Weather Icon" /></li>
+            <div class="list-group-item"><img id="wicon1" class="weather1" alt="Weather Icon" /></div>
             <li class="list-group-item" id="temp-day1"></li>
             <li class="list-group-item" id="wind-day1"></li>
             <li class="list-group-item" id="humidity-day1"></li>
           </ul>
         </div>
-        <div class="card" id="card2" style="width: 18rem;">
-          <div class="card-header" id="day2"></div>
+        <div class="card bg-secondary mb-3" id="card2" style="width: 18rem;">
+          <div class="card-header text-white" id="day2"></div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><img id="wicon2" class="weather2" alt="Weather Icon" /></li>
             <li class="list-group-item" id="temp-day2"></li>
@@ -83,8 +80,8 @@
             <li class="list-group-item" id="humidity-day2"></li>
           </ul>
         </div>
-        <div class="card" id="card3" style="width: 18rem;">
-          <div class="card-header" id="day3"></div>
+        <div class="card bg-secondary mb-3" id="card3" style="width: 18rem;">
+          <div class="card-header text-white" id="day3"></div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><img id="wicon3" class="weather3" alt="Weather Icon" /></li>
             <li class="list-group-item" id="temp-day3"></li>
@@ -92,8 +89,8 @@
             <li class="list-group-item" id="humidity-day3"></li>
           </ul>
         </div>
-        <div class="card" id="card4" style="width: 18rem;">
-          <div class="card-header" id="day4"></div>
+        <div class="card bg-secondary mb-3" id="card4" style="width: 18rem;">
+          <div class="card-header text-white" id="day4"></div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><img id="wicon4" class="weather4" alt="Weather Icon" /></li>
             <li class="list-group-item" id="temp-day4"></li>
@@ -101,10 +98,10 @@
             <li class="list-group-item" id="humidity-day4"></li>
           </ul>
         </div>
-        <div class="card" id="card5" style="width: 18rem;">
-          <div class="card-header" id="day5"></div>
+        <div class="card bg-secondary mb-3" id="card5" style="width: 18rem;">
+          <div class="card-header text-white" id="day5"></div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><img id="wicon5" class="weather5" alt="Weather Icon" /></li>
+            <li class="list-group-item"><img id="wicon5" class="weather5" alt="Weather Icon"></li>
             <li class="list-group-item" id="temp-day5"></li>
             <li class="list-group-item" id="wind-day5"></li>
             <li class="list-group-item" id="humidity-day5"></li>
