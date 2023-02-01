@@ -47,7 +47,7 @@ You can add as many cities as you like and then click on the one you want the we
 
 ## Usage
 
-![alt text](./assets/images/Screenshot-weather-dashboard.png)
+![alt text](./assets/images/Weather-Dashboard.png)
 
 ## Technology Used
 
