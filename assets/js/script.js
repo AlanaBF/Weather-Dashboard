@@ -1,11 +1,9 @@
 $(document).ready(function () {
 
-    // empty array for the cities to go in
-    cities = [];
-
     // function to render search buttons to page
     function renderButtons() {
         $("#buttons-view").empty();
+        var cities = JSON.parse(localStorage.getItem("city")) || []
         for (var i = 0; i < cities.length; i++) {
             // Then dynamically generating buttons for each city in the array
             var searchHistory = $("<button>");
@@ -23,17 +21,20 @@ $(document).ready(function () {
     $("#add-city").on("click", function (event) {
         event.preventDefault()
         var city = $("#city-input").val().trim();
-        cities.push(city);
-        console.log(cities);
-        localStorage.setItem("City", cities);
-        $("#buttons-view").val(localStorage.getItem(cities));
+        //cities.push(city);
+        saveToLs(city);
+        displayWeatherInfo(city)
         renderButtons();
-
     });
+    // function to save to local storage
+    function saveToLs(city) {
+        var cities = JSON.parse(localStorage.getItem("city")) || []
+        cities.push(city)
+        localStorage.setItem("city", JSON.stringify(cities))
+    }
 
     //function created to display the weather information
-    function displayWeatherInfo() {
-        var city = $(this).attr("data-name");
+    function displayWeatherInfo(city) {
         var APIKey = "06049584939bfdb947b35800e5407bab";
         var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey;
         // Here we run our AJAX call to the OpenWeatherMap API
@@ -46,7 +47,6 @@ $(document).ready(function () {
             console.log(queryURL);
             // Log the resulting object
             console.log(response);
-
             //retrieving the icon code for the weather image from the api
             var iconcode = response.list[0].weather[0].icon;
             var iconURL = "http://openweathermap.org/img/w/" + iconcode + ".png";
@@ -139,9 +139,13 @@ $(document).ready(function () {
             $("#humidity-day5").text("Humidity: " + humidity + "%")
         });
     }
+    function getCityName() {
+        var city = $(this).attr("data-name");
+        displayWeatherInfo(city)
+    }
 
     $("#buttons-view").empty();
-    $(document).on("click", ".city", displayWeatherInfo);
+    $(document).on("click", ".city", getCityName);
 
     renderButtons();
 
