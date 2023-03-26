@@ -1,0 +1,144 @@
+.body {
+    background-color: #fcf003;
+}
+
+header {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(168, 3, 245) 0%, rgb(249, 14, 116) 35%, rgb(102, 0, 255) 100%);
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.card-group {
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+h3 {
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+p {
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+img {
+    size-adjust: 1px;
+}
+
+.child {
+    display: inline-block;
+}
+
+.search {
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+    display: flex;
+    flex-wrap: wrap !important;
+}
+
+#buttons-view {
+    border-radius: 1rem !important;
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+    display: flex;
+    flex-wrap: wrap !important;
+}
+
+.btn {
+    border-radius: 1rem !important;
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+    border: black solid 5px !important;
+    display: flex;
+    flex-wrap: wrap !important;
+}
+
+.form-label {
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.form-input {
+    border-radius: 1rem !important;
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+    border: black solid 5px !important;
+}
+
+#card {
+    background-color: rgb(102, 0, 255);
+    color: white;
+    padding: 2rem !important;
+    text-align: center;
+    border-radius: 5rem !important;
+    margin-top: 2%;
+    border: black solid 5px !important;
+}
+
+.list-group-item {
+    background-color: chartreuse !important;
+    border-radius: 2rem;
+}
+
+.card-header {
+    background-color: rgb(249, 14, 116) !important;
+}
+
+#card1 {
+    border: black solid 10px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+#card2 {
+    border: black solid 10px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+#card3 {
+    border: black solid 10px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+#card4 {
+    border: black solid 10px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+#card5 {
+    border: black solid 10px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+#add-city {
+    border: black solid 10px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.city {
+    display: block;
+    border: black solid 2px;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color:rgb(168, 3, 245);
+    color: white;
+}
